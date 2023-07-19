@@ -13,12 +13,17 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/AboutView.vue')
   },
   {
     path: '/test',
     name: 'test',
-    component: () => import(/* webpackChunkName: "about" */ '../views/TestEl.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/日期选择.vue')
+  },
+  {
+    path: '/transfer',
+    name: 'transfer',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/Transfer.vue')
   }
 ]
 
